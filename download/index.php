@@ -23,7 +23,7 @@
 	$pageKeywords	= "Eclipse, EclipseRT, Gemini, OSGi, Management, Documentation";
 	$pageAuthor		= "Christopher Frost";
 
-	$geminiManagementVersions = array("1.0.5.RELEASE", "1.0.4.RELEASE", "1.0.3.RELEASE", "1.0.2.RELEASE", "1.0.1.RELEASE", "1.0.0.RELEASE");
+	$geminiManagementVersions = array("2.0.0.RELEASE");
 
 	ob_start();
 ?>
@@ -54,12 +54,8 @@
 		echo "	<ul>";
 		echo "		<li><a href='http://www.eclipse.org/gemini/management/download/release-notes/$version.php' target='_self'>View Release Notes</a></li>";
 		echo "		<li>Update Site 'http://download.eclipse.org/gemini/updates/management/$version'</li>";
-		if($version == '1.0.0.RELEASE' | $version == '1.0.1.RELEASE') {
-			echo "		<li><strong>Gemini Management</strong> -  <a href='http://www.eclipse.org/downloads/download.php?file=/gemini/management/release-zips/$version/org.eclipse.gemini.mgmt_$version.jar' target='_self'>Download</a>";
-		}else {
-			echo "		<li><strong>Gemini Management</strong> -  <a href='http://www.eclipse.org/downloads/download.php?file=/gemini/management/release-zips/$version/org.eclipse.gemini.management-$version.jar' target='_self'>Download</a> - ";
-			echo "			<a href='http://www.eclipse.org/downloads/download.php?file=/gemini/management/release-zips/$version/org.eclipse.gemini.management-$version-sources.jar' target='_self'>(Source)</a></li>";
-		}
+		echo "		<li><strong>Gemini Management</strong> -  <a href='http://www.eclipse.org/downloads/download.php?file=/gemini/management/release-zips/$version/org.eclipse.gemini.management-$version.jar' target='_self'>Download</a> - ";
+		echo "			<a href='http://www.eclipse.org/downloads/download.php?file=/gemini/management/release-zips/$version/org.eclipse.gemini.management-$version-sources.jar' target='_self'>(Source)</a></li>";
 		echo "	</ul>";
 		echo "</div>";
 		$first = false;
