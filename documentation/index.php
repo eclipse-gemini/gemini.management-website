@@ -30,14 +30,19 @@
 ?>
 	
 	<div id="midcolumn">
-		<h2>Gemini Management Documentation</h2>
+		<h2>Gemini Management 2.0.x Documentation</h2>
 		<p>
-		Gemini Management implements the JMX  Specification Version 1.0 of the OSGi Service Platform Enterprise Specification, Release 4, Version 4.2, section 124. 
-        This specification may be downloaded
-			<a href="http://www.osgi.org/Download/Release4V42">here</a>.		
+		<strong>Gemini Management 2.0.x.RELEASE</strong> implements the JMX™ Specification Version 1.1 of the OSGi Enterprise Release 5 Specification, section 124.
+		This specification may be downloaded <a href="http://www.osgi.org/Download/File?url=/download/r5/osgi.enterprise-5.0.0.pdf">here</a>.
+		</p>
+
+		<h2>Gemini Management 1.0.x Documentation</h2>
+		<p>
+		<strong>Gemini Management 1.0.x.RELEASE</strong> implements the JMX™ Specification Version 1.0 of the OSGi Service Platform Enterprise Specification, Release 4,
+		Version 4.2, section 124. This specification may be downloaded <a href="http://www.osgi.org/Download/Release4V42">here</a>.		
 		</p>
 		
-		<h3>Extensions to the Specification</h3>
+		<h4>Extensions to the Specification</h4>
 		<p>
 		Gemini Management extends the JMX Specification Version 1.0 interface <code>BundleStateMBean</code> with a method <code>TabularData listBundles(int mask)</code>.
 		The original interface has the same method, but without arguments. It returns a <code>TabularData</code> object, containing all details for all bundles. The new method
